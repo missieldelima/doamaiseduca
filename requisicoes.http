@@ -1,0 +1,23 @@
+### Testar Rota Inicial
+GET http://localhost:3000/
+
+###
+
+### Listar Todas as Doações
+GET http://localhost:3000/doacoes
+
+###
+
+### Cadastrar Nova Doação (POST)
+POST http://localhost:3000/doacoes
+Content-Type: application/json
+
+{
+  "item": "Mochila Escolar Nova",
+  "categoria": "Material Escolar"
+}
+
+###
+
+### Eliminar uma Doação (DELETE)
+DELETE http://localhost:3000/doacoes/1
