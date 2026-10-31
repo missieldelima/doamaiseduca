@@ -1,8 +1,10 @@
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = 3000;
 
-// Permite que o Express entenda dados no formato JSON enviados no corpo da requisição
+// Permite a comunicação com o Front-End (CORS)
+app.use(cors());
 app.use(express.json());
 
 // Nosso "Banco de Dados" temporário na memória
